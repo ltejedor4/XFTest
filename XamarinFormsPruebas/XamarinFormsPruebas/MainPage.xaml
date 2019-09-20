@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="WhiteSmoke"
+             x:Class="XamarinFormsPruebas.MainPage">
+   
+    <StackLayout Padding="10">
+        <Frame CornerRadius="100"
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="Center"
+               Padding="0"
+               IsClippedToBounds="True">
+            <Image Source="perfil.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+        </Frame>
+        <Label Text="Mis Clases" TextColor="#0F385A" FontAttributes="Bold"/>
+        <Frame CornerRadius="5" 
+               Margin="-5 0 10 0"
+               Padding="0">
+            <Grid RowSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" BackgroundColor="#1FB2DE"/>
+                <StackLayout Grid.Row="1" Padding="5">
+                    <Label Text="Clase ahora" TextColor="Red"/>
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="25 Mar" TextColor="Blue"/>
+                        <Label Text="Miercoles 10:00 AM" TextColor="Green"/>
+                        <Label Text="Teoria de la comunicación II" TextColor="#0F385A" FontAttributes="Bold"/>
+                    </StackLayout>
+                    <Label Text="Edificio de la casita roja" TextColor="#1FB2DE"/>
+                </StackLayout>
+                
+            </Grid>
+            
+        </Frame>
+
+        <Label Text="Próximas entregas" TextColor="#0F385A" FontAttributes="Bold"/>
+        <Frame CornerRadius="5" 
+               Margin="-5 0 0 0"
+               Padding="0">
+            <Grid RowSpacing="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <BoxView Grid.Row="0" BackgroundColor="Green"/>
+                <StackLayout Grid.Row="1" Padding="5" Orientation="Horizontal">
+                    <Label Text="25 Mar" 
+                           TextColor="Blue" 
+                           FontSize="Medium" WidthRequest="40"/>
+                    <StackLayout Spacing="0">
+                        <Label Text="Miercoles 10:00 AM" TextColor="Green"/>
+                        <Label Text="Teoria de la comunicación II" 
+                               TextColor="#0F385A" 
+                               FontAttributes="Bold"/>
+                        <Label Text="Miercoles 10:00 AM" TextColor="#0F385A"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Grid.Row="2" Padding="5" Orientation="Horizontal">
+                    <Label Text="05 Jul" TextColor="Blue" FontSize="Medium" WidthRequest="40"/>
+                    <StackLayout Spacing="0">
+                        <Label Text="Miercoles 10:00 AM" TextColor="Green"/>
+                        <Label Text="Teoria de la comunicación II" TextColor="#0F385A" FontAttributes="Bold"/>
+                        <Label Text="Miercoles 10:00 AM" TextColor="#0F385A"/>
+                    </StackLayout>
+                </StackLayout>
+
+            </Grid>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
